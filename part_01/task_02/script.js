@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(plan).classList.add('active');
     }
 
+    
+
     // Initialize with default plan
     switchTab('premium');
 
