@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #fff; 
+    margin: 20px 0;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+    border-bottom: 2px solid #fff; 
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #333; 
+    border-radius: 6px;
+    background-color: #222;
+    color: #fff; 
+    width: calc(100% - 80px);
+    margin-right: 10px;
+}
+
+button {
+    background: #333; 
+    border: 0;
+    color: #fff; 
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+button:hover {
+    background: #555; 
+}
+
+ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #333; 
+    background-color: #111; 
+    border-radius: 6px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li label {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #fff; 
+}
+
+li input[type="text"] {
+    display: none;
+}
+
+li.editMode input[type="text"] {
+    display: block;
+    width: 200px;
+}
+
+li.editMode label {
+    display: none;
+}
+
+button.edit, button.delete {
+    background: none;
+    border: 0;
+    color: #888; 
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button.edit:hover {
+    color: #fff; 
+}
+
+button.delete:hover {
+    color: #CF2323; 
+}
+
+#completed-tasks label {
+    text-decoration: line-through;
+    color: #888; 
+}
